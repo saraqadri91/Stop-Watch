@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/stopwatch-solid.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <div class="txt">
+        <h1 id="show">Stop <br> Watch</h1>
+        <h1 id="none">Stop Watch</h1>
+    </div>
+    <div class="flex">
+        <div class="display">
+
+            <p class="time" id="nums">00:00:00</p>
+            <div class="btns">
+                <button id="stop" onclick="pause()"><i class="fa-solid fa-circle-stop"></i></button>
+                <button id="play" onclick="start()"><i class="fa-solid fa-circle-play fs" id="icon"></i></button>
+                <button id="resume" onclick="reset()"><i class="fa-solid fa-rotate-right rotate"></i> </button>
+            </div>
+        </div>
+    </div>
+    <audio id="beep-sound" src="sound/button-46.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="sound/beep-07a.mp3" preload="auto"></audio>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

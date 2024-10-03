@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+.edu-au-vic-wa-nt-dots-unii {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Courier Prime", monospace;
+    background-image: url(https://images.pexels.com/photos/7504412/pexels-photo-7504412.jpeg);
+   
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-height: 90vh;
+    margin: 0;
+    padding-right: 50px;
+}
+
+h1 {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+
+    color: #fcfaf9;
+    font-size: 5rem;
+    padding-left: 70px;
+
+
+}
+
+.txt {
+    /* background-color: whitesmoke; */
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.display {
+    background-color: rgba(255, 255, 255, 0.85);
+    /* Make background slightly transparent */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 250px;
+    width: 400px;
+    border-radius: 12px;
+    /* Softer edges */
+}
+
+.time {
+    font-size: 3.5rem;
+    color: #353535;
+    /* Dark text for contrast */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    transition: transform 0.2s ease, color 0.3s ease;
+    /* Add transitions */
+}
+
+#none {
+    display: none;
+}
+
+button:hover i {
+    color: #cc836e;
+    transform: scale(1.2);
+}
+
+.display i {
+    font-size: 2.8rem;
+    color: #353535;
+}
+
+.fs {
+    font-size: 5.5rem !important;
+    padding-left: 6px;
+}
+
+.rotate {
+    padding-right: 5px !important;
+}
+
+@media screen and (max-width:1024px) {
+    .flex {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        margin: 0;
+        padding-right: 0px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(images/no.jpg);
+    }
+
+    .flex {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+        margin: 0;
+        padding-right: 0px;
+
+    }
+
+    .display {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        height: 250px;
+        width: 400px;
+    }
+
+    .txt {
+        padding-bottom: 80px;
+    }
+    .txt h1 { padding-left: 0; 
+    font-size: 3rem;
+}
+}
+
+@media screen and (max-width:425px) {
+    .txt h1 {
+        font-size: 4rem;
+        padding-left: 0; 
+    }
+    button:hover i {
+        color: #60283F;
+        transform: scale(1.2);
+    }
+    .txt {
+        padding-bottom: 150px;
+          }
+
+    #show {
+        display: none;
+    }
+
+    #none {
+        display: block;
+    }
+
+    .display {
+        width: 300px;
+    }
+}
